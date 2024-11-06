@@ -41,7 +41,7 @@ resource "azurerm_linux_virtual_machine" "s1_vm" {
   admin_username      = "adminuser" 
 
   admin_ssh_key {
-    username   = "adminuser"  # This should match the admin_username
+    username   = "adminuser"   
     public_key = file("~/.ssh/my_ssh_key.pub")  
   }
 
