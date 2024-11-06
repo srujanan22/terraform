@@ -24,8 +24,8 @@ variable "tuple_val" {
 
 variable "object_val" {
   type = object({
-  hobbies  = list(string)
-})
+    hobbies = list(string)
+  })
 }
 
 
