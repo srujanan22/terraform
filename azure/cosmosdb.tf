@@ -1,4 +1,4 @@
-provider "azurerm" {
+rovider "azurerm" {
   features {}
 }
 
@@ -42,7 +42,7 @@ resource "azurerm_cosmosdb_sql_container" "container1" {
   resource_group_name = azurerm_cosmosdb_account.cosmosaccount.resource_group_name
   account_name        = azurerm_cosmosdb_account.cosmosaccount.name
   database_name       = azurerm_cosmosdb_sql_database.cosmosdb.name
-  partition_key_path  = "/myPartitionKey"
+  partition_key_paths  = ["/myPartitionKey"]
   throughput          = 400
 }
 
