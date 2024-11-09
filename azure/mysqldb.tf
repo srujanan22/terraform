@@ -12,7 +12,7 @@ resource "azurerm_mysql_flexible_server" "mysqldbnew1" {
   resource_group_name    = azurerm_resource_group.rg_srujana.name
   location               = azurerm_resource_group.rg_srujana.location
   administrator_login    = "srujana"
-  administrator_password = "Kachkal@1998"
+  administrator_password = "Srujana@123"
   sku_name               = "B_Standard_B1s"
 }
 
